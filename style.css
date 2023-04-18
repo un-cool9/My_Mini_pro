@@ -1,0 +1,130 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: cover;
+}
+/* parent box */
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+/* 1st cover background image styled here */
+.background{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transform: translateZ(-40px) scale(5.4);
+    z-index: -1;
+}
+/* 1st Heading */
+h1{
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    font-size: 10vw;
+    left: 21%;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+section{
+    color: white;
+    padding: 5rem 0;
+    background-image: linear-gradient(#48c6ef ,#6f86d6); 
+}
+.secHeading{
+   padding: 0 5rem;
+   font-size: 5rem;
+}
+a{
+    color: black;
+    text-decoration:none;
+}
+/* Heading of background images styled here */
+.text{
+    padding: 5rem;
+    margin: 5px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* All background images from 2nd picture styles here */
+.bg{
+   position: relative;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   width: 100%;
+   height: 500px;
+}
+.bg1{
+    background-image: url(bg1.jpg);
+}
+.bg2{
+    background-image: url(bg2.jpg);
+}
+.bg3{
+    background-image: url(bg3.jpg);
+    transform: translateZ(-200px) scale();
+}
+.bg4{
+    background-image: url(bg4.jpg);
+}
+.bg5{
+    background-image: url(bg5.jpg);
+}
+p{
+   background: transparent;
+   color: #fff;
+}
+/* p tag description styled here */
+.desc{
+    position:absolute;
+    padding: 0.5rem 1.5rem;
+    background:white;
+    color:black;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    /* transform: translateX(20%) translateY(20%); */
+    text-align: center;
+}
+
+/* stylin for footer started here !!! */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#48c6ef ,#6f86d6); 
+    padding: 0.5rem;
+}
+/* Social media accounts inligment */
+.foot{
+    text-align: center;
+}
+#insta,#linked,#git,#gmail,#twitter{
+    height: 3vh;
+    width: 3vh;
+    padding: 2px;
+    margin: 3px;
+}
+#gmail{
+     width: 3.7vh;
+     /* gamil logo have diff width size  */
+}
+
+/* Follow image dimension styled here */
+.follow{
+    height: 5vh;
+    width: 10vh;
+    margin: 2px;
+    padding: 2px;
+}
